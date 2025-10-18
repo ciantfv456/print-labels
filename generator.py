@@ -164,8 +164,8 @@ if __name__ == "__main__":
     for l in labels:
         if l.amount > 0:
             create_templated_image_cm(
-                template_path=r"C:\Users\shama\OneDrive\Desktop\meat.jpg",
-                logo_path=r"C:\Users\shama\Documents\מדבקות\assets\000.jpg",
+                template_path=r"C:\Users\local\Desktop\meat.jpg",
+                logo_path=r"C:\Users\local\Documents\מדבקות\assets\000.jpg",
                 barcode_path=create_barcode(l.barcode),
                 font_path="arial.ttf", # You must use a valid font file
                 output_path=f"{l.barcode}.png",
@@ -181,4 +181,5 @@ if __name__ == "__main__":
             )
             for _ in range(l.amount):
                 print_label(f"{l.barcode}.png")
+
 
