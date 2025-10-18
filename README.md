@@ -18,5 +18,4 @@ win32api
 pandas
 python-barcode
 ```
-
 you will need to set the painter as the default application of png
